@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 3</title>
+    <script>
+        function cetakAngka() {
+            let hasil = "";
+            // Perulangan for untuk mencetak angka dari 1 hingga 10
+            for (let i = 1; i <= 10; i++) {
+                hasil += i + "<br>";
+            }
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+</head>
+<body>
+    <h1>Cetak Angka 1 hingga 10</h1>
+    <button onclick="cetakAngka()">Cetak Angka</button>
+    <div id="hasil"></div>
+</body>
+</html>

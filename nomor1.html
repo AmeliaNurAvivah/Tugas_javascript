@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1</title>
+</head>
+<body>
+    <h1>Hasil Operasi Aritmatika</h1>
+    <div id="hasil"></div>
+    <script>
+        let a = 5;
+        let b = 10;
+
+        // Deklarasi variabel aritmatika
+        let tambah = a + b;
+        let kurang = a - b;
+        let kali = a * b;
+        let quotient = b !== 0 ? a / b : "Pembagian tidak dapat dilakukan karena pembagi nol.";
+
+        // Mendapatkan elemen dengan id 'hasil'
+        let hasilDiv = document.getElementById('hasil');
+
+        // Menambahkan hasil operasi aritmatika ke elemen hasilDiv
+        hasilDiv.innerHTML = `
+            <p>Hasil penjumlahan: ${tambah}</p>
+            <p>Hasil pengurangan: ${kurang}</p>
+            <p>Hasil perkalian: ${kali}</p>
+            <p>Hasil pembagian: ${quotient}</p>
+        `;
+    </script>
+</body>
+</html>
